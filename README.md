@@ -6,16 +6,16 @@
 - 普通控制器的 Present 动画和 Dismiss动画，
 
 -----
->  ###思路简析：
+>  ### 思路简析：
 - 跳转的控制器遵守 `UINavigationControllerDelegate`  协议，从而实现 Pop 和 Push 的跳转动画。
 
->```code
+<code>
 # 通过 operation == UINavigationControllerOperationPush 或者 UINavigationControllerOperationPop 区分是 Push 还是 Pop
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
  animationControllerForOperation:(UINavigationControllerOperation)operation
  fromViewController:(UIViewController *)fromVC
  toViewController:(UIViewController *)toVC```
-- 跳转的控制器遵守`UIViewControllerTransitioningDelegate`协议， 从而实现 Present 和 Dissmiss跳转动画
+- 跳转的控制器遵守`UIViewControllerTransitioningDelegate`协议， 从而实现 Present 和 Dissmiss跳转动画</code>
 
 >```code
 # Present:
