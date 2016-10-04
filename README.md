@@ -25,12 +25,10 @@
 
 > - <big><u><b>上述的几个方法都是  返回一个遵守UIViewControllerAnimatedTransitioning协议的对象，而主要的动画实现就是写在这个对象当中！我们只要封装好这个类型的对象，在上述方法中返回对应实例对象就能实现动画效果！</big></u></b>
 
->```code
-
+>```object
 # UIViewControllerAnimatedTransitioning协议 主要实现两个方法
 -(NSTimeInterval)transitionDuration: transitionContext： 跳转的时间
 -(void)animateTransition: transitionContext 所要执行的动画在这里实现 
-
 ```
 >>其中第二个方法传入的参数是泛型的`UIViewControllerContextTransitioning`对象
 可以通过下面它的的实例方法获取我们需要展示动画的相关属性
