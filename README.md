@@ -36,8 +36,8 @@
 ####  Key 取值  UITransitionContextFromViewKey（源视图）  UITransitionContextToViewKey（目标视图）
 \- (nullable __kindof UIView *)viewForKey:(NSString *)key
 
-```
-------
+
 
 ##### 简单效果展示：
+
 ![演示——跳转.gif](http://upload-images.jianshu.io/upload_images/1523603-841d6af2b7b0db2a.gif?imageMogr2/auto-orient/strip)
